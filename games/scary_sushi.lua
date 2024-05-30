@@ -61,7 +61,7 @@ local Button = Teleport:CreateButton({
 local Button = Teleport:CreateButton({
 	Name = "Elevator",
 	Callback = function()
-		local spawn = workspace.SludgeRoom.MachineRoom.Trigger.Lever.LeverMovements.LeverUp
+		local spawn = workspace.ElevatorRoom.Elevator.Floor
 		PLR.Character.HumanoidRootPart.CFrame = spawn.CFrame + Vector3.new(0, 1, 0)
 	end,
  })
