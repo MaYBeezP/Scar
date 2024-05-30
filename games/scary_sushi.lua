@@ -4,8 +4,8 @@ local PLR = game:GetService("Players").LocalPlayer
 
 local Window = Rayfield:CreateWindow({
 	Name = "🍣 | Scary Sushi ",
-	LoadingTitle = "Ui Loading!",
-	LoadingSubtitle = "by Sectwo",
+	LoadingTitle = "Loading..",
+	LoadingSubtitle = "Brought to you by Scar",
 	ConfigurationSaving = {
 	   Enabled = true,
 	   FolderName = nil, -- Create a custom folder for your hub/game
@@ -55,6 +55,14 @@ local Button = Teleport:CreateButton({
 	Callback = function()
 		local spawn = workspace.SludgeRoom.MachineRoom.Trigger.Lever.LeverMovements.LeverUp
 		PLR.Character.HumanoidRootPart.CFrame = spawn.CFrame + Vector3.new(0, 0, -1)
+	end,
+ })
+
+local Button = Teleport:CreateButton({
+	Name = "Elevator",
+	Callback = function()
+		local spawn = workspace.SludgeRoom.MachineRoom.Trigger.Lever.LeverMovements.LeverUp
+		PLR.Character.HumanoidRootPart.CFrame = spawn.CFrame + Vector3.new(0, 1, 0)
 	end,
  })
 
